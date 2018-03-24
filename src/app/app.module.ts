@@ -6,11 +6,13 @@ import { environment } from '../environments/environment';
 
 
 import { AppComponent } from './app.component';
+import { DadosPesquisaComponent } from './dados-pesquisa/dados-pesquisa.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DadosPesquisaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+<div>
+  <h1 style="text-align: center">
+    WHOQOL
+  </h1>
+  <div>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Sobrenome</th>
+          <th scope="col">Profissão</th>
+          <th scope="col">Respostas</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let psq of pesquisa| async; let i = index">
+        <tr>
+          <th scope="row">{{i+1}}</th>
+          <td>{{psq.nome}}</td>
+          <td>{{psq.sobrenome}}</td>
+          <td>{{psq.profissao}}</td>
+          <td>{{psq.respostas}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
