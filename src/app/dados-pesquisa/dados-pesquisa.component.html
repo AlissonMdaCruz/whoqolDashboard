@@ -8,18 +8,32 @@
         <tr>
           <th scope="col">#</th>
           <th scope="col">Nome</th>
-          <th scope="col">Sobrenome</th>
+          <th scope="col">Sexo</th>
+          <th scope="col">Idade</th>
           <th scope="col">Profissão</th>
-          <th scope="col">Respostas</th>
+          <th scope="col">Escolaridade</th>
+          <th scope="col">Estado Civil</th>
+          <th scope="col">Dominio Fisico</th>
+          <th scope="col">Dominio Meio Ambiente</th>
+          <th scope="col">Dominio Psicologico</th>
+          <th scope="col">Dominio Rel. Social</th>
+          <th scope="col">Score</th>
         </tr>
       </thead>
       <tbody *ngFor="let psq of pesquisa| async; let i = index">
         <tr>
           <th scope="row">{{i+1}}</th>
           <td>{{psq.nome}}</td>
-          <td>{{psq.sobrenome}}</td>
+          <td>{{psq.sexo}}</td>
+          <td>{{psq.idade}}</td>
           <td>{{psq.profissao}}</td>
-          <td>{{psq.respostas}}</td>
+          <td>{{psq.escolaridade}}</td>
+          <td>{{psq.estadoCivil}}</td>
+          <td>{{psq.domFisico}}</td>
+          <td>{{psq.domMeioAmb}}</td>
+          <td>{{psq.domPsico}}</td>
+          <td>{{psq.domRelSoc}}</td>
+          <td>{{psq.score}}</td>
         </tr>
       </tbody>
     </table>
