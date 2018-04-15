@@ -3,7 +3,7 @@
     Dados da Pesquisa
   </h1>
   <div>
-    <table class="highlight">
+    <table class="centered striped">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -20,9 +20,9 @@
           <th scope="col">Score</th>
         </tr>
       </thead>
-      <tbody *ngFor="let psq of pesquisa| async; let i = index">
-        <tr>
-          <th scope="row">{{i+1}}</th>
+      <tbody>
+        <tr *ngFor="let psq of pesquisa| async; let i = index">
+          <td scope="row">{{i+1}}</td>
           <td>{{psq.nome}}</td>
           <td>{{psq.sexo}}</td>
           <td>{{psq.idade}}</td>
