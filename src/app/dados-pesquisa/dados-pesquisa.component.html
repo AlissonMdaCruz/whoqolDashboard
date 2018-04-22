@@ -1,15 +1,17 @@
 <div>
-  <h1 style="text-align: center">
+  <h2 style="text-align: center" class="col s10">
     Dados da Pesquisa
-  </h1>
+    <button class="waves-effect waves-light btn-large right" (click)="toCSV()">
+      <i class="material-icons right">archive</i>Export to CSV</button>
+  </h2>
   <div>
     <table class="centered striped">
       <thead>
         <tr>
           <th scope="col">#</th>
           <th scope="col">Nome</th>
-          <th scope="col">Sexo</th>
           <th scope="col">Idade</th>
+          <th scope="col">Sexo</th>
           <th scope="col">Profissão</th>
           <th scope="col">Escolaridade</th>
           <th scope="col">Estado Civil</th>
@@ -23,17 +25,17 @@
       <tbody>
         <tr *ngFor="let psq of pesquisa| async; let i = index">
           <td scope="row">{{i+1}}</td>
-          <td>{{psq.nome}}</td>
-          <td>{{psq.sexo}}</td>
-          <td>{{psq.idade}}</td>
-          <td>{{psq.profissao}}</td>
-          <td>{{psq.escolaridade}}</td>
-          <td>{{psq.estadoCivil}}</td>
-          <td>{{psq.domFisico}}</td>
-          <td>{{psq.domMeioAmb}}</td>
-          <td>{{psq.domPsico}}</td>
-          <td>{{psq.domRelSoc}}</td>
-          <td>{{psq.score}}</td>
+          <td>{{psq._01_nome}}</td>
+          <td>{{psq._02_idade}}</td>
+          <td>{{psq._03_sexo}}</td>
+          <td>{{psq._06_profissao}}</td>
+          <td>{{psq._05_escolaridade}}</td>
+          <td>{{psq._04_estadoCivil}}</td>
+          <td>{{psq._11_domFisico}}</td>
+          <td>{{psq._14_domMeioAmb}}</td>
+          <td>{{psq._12_domPsico}}</td>
+          <td>{{psq._13_domRelSoc}}</td>
+          <td>{{psq._15_score}}</td>
         </tr>
       </tbody>
     </table>
