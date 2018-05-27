@@ -1,6 +1,6 @@
 export interface Pesquisa {
   _01_nome: string;
-  _02_idade: number;
+  _02_idade: string;
   _03_sexo: string;
   _04_estadoCivil: string;
   _05_escolaridade: string;

@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { DadosPesquisaComponent } from './dados-pesquisa/dados-pesquisa.component';
 import { EstatisticaComponent } from './estatistica/estatistica.component';
 import { rounting } from './app.routing';
+import { StatisticsService } from './providers/statistics.service';
 
 
 @NgModule({
@@ -24,7 +25,7 @@ import { rounting } from './app.routing';
     AngularFirestoreModule.enablePersistence(),
     rounting
   ],
-  providers: [],
+  providers: [StatisticsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

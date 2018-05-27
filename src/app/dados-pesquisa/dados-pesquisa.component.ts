@@ -14,24 +14,19 @@ import 'rxjs/add/operator/map';
 })
 export class DadosPesquisaComponent implements OnInit {
 
-  private pesquisaCollection: AngularFirestoreCollection<Pesquisa>;
-  private pesquisa: Observable<Pesquisa[]>;
-  private tabela;
-  // private ar = [{ 'nome': 'rola', 'cod': 1 }, { 'nome': 'xuxa', 'cod': 2 }, { 'nome': 'toca', 'cod': 3 }];
-  private options = {
+  public pesquisaCollection: AngularFirestoreCollection<Pesquisa>;
+  public pesquisa: Observable<Pesquisa[]>;
+  public tabela;
+  public options = {
     fieldSeparator: ';',
     quoteStrings: '"',
     decimalseparator: ',',
     showLabels: true,
-    headers: ["Nome","Idade","Sexo","Estado Civil","Escolaridade","Profissao","Email","Respostas",
-    "Ajuda","Tempo","Dom Fisico","Dom Psicologico","Dom Rel Sociais","Dom Meio Ambiente","Score"]
+    headers: ['Nome', 'Idade', 'Sexo', 'Estado Civil', 'Escolaridade', 'Profissao', 'Email', 'Respostas',
+    'Ajuda', 'Tempo', 'Dom Fisico', 'Dom Psicologico', 'Dom Rel Sociais', 'Dom Meio Ambiente', 'Score']
   };
 
-  constructor(private afs: AngularFirestore) {
-    // let cuzin = new Angular5Csv(this.ar, 'Dados', this.options);
-    // console.log(cuzin);
-
-  }
+  constructor(public afs: AngularFirestore) { }
 
   ngOnInit() {
     this.pesquisaCollection = this.afs.collection('pesquisa');
@@ -43,8 +38,9 @@ export class DadosPesquisaComponent implements OnInit {
   }
 
   toCSV() {
-    console.log("Exportando");
-    new Angular5Csv(this.tabela, 'WhoqolAppDados', this.options)
+    console.log('Exportando');
+    // tslint:disable-next-line:no-unused-expression
+    new Angular5Csv(this.tabela, 'WhoqolAppDados', this.options);
   }
 
 }
