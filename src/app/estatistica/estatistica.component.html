@@ -12,10 +12,10 @@
           <p>Média Geral: {{ geral.media }}</p>
         </div>
         <div class="col m3 l3">
-          <p>Desvio Padrão: {{ geral.desvioPadrao }}</p>
+          <p>Variância(*): {{ geral.variancia }}</p>
         </div>
         <div class="col m3 l3">
-          <p>Variância: {{ geral.variancia }}</p>
+          <p>Desvio Padrão(**): {{ geral.desvioPadrao }}</p>
         </div>
       </div>
     </div>
@@ -40,17 +40,17 @@
           <tbody>
             <tr>
               <td>Homens</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ sexo.homem.total }}</td>
+              <td>{{ sexo.homem.media }}</td>
+              <td>{{ sexo.homem.variancia }}</td>
+              <td>{{ sexo.homem.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Mulheres</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ sexo.mulher.total }}</td>
+              <td>{{ sexo.mulher.media }}</td>
+              <td>{{ sexo.mulher.variancia }}</td>
+              <td>{{ sexo.mulher.desvioPadrao }}</td>
             </tr>
           </tbody>
         </table>
@@ -77,38 +77,38 @@
           <tbody>
             <tr>
               <td>Até 20 anos</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ idade.a.total }}</td>
+              <td>{{ idade.a.media }}</td>
+              <td>{{ idade.a.variancia }}</td>
+              <td>{{ idade.a.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>De 21 a 35 anos</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ idade.b.total }}</td>
+              <td>{{ idade.b.media }}</td>
+              <td>{{ idade.b.variancia }}</td>
+              <td>{{ idade.b.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>De 36 a 50 anos</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ idade.c.total }}</td>
+              <td>{{ idade.c.media }}</td>
+              <td>{{ idade.c.variancia }}</td>
+              <td>{{ idade.c.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>De 51 a 65 anos</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ idade.d.total }}</td>
+              <td>{{ idade.d.media }}</td>
+              <td>{{ idade.d.variancia }}</td>
+              <td>{{ idade.d.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Acima de 65 anos</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ idade.e.total }}</td>
+              <td>{{ idade.e.media }}</td>
+              <td>{{ idade.e.variancia }}</td>
+              <td>{{ idade.e.desvioPadrao }}</td>
             </tr>
           </tbody>
         </table>
@@ -135,38 +135,38 @@
           <tbody>
             <tr>
               <td>Auxiliar de Limpeza</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ profissao.aux.total }}</td>
+              <td>{{ profissao.aux.media }}</td>
+              <td>{{ profissao.aux.variancia }}</td>
+              <td>{{ profissao.aux.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Estagiário(a)</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ profissao.estag.total }}</td>
+              <td>{{ profissao.estag.media }}</td>
+              <td>{{ profissao.estag.variancia }}</td>
+              <td>{{ profissao.estag.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Professor(a)</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ profissao.prof.total }}</td>
+              <td>{{ profissao.prof.media }}</td>
+              <td>{{ profissao.prof.variancia }}</td>
+              <td>{{ profissao.prof.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Técnico-Administrativo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ profissao.tecn.total }}</td>
+              <td>{{ profissao.tecn.media }}</td>
+              <td>{{ profissao.tecn.variancia }}</td>
+              <td>{{ profissao.tecn.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Vigilante</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ profissao.vigi.total }}</td>
+              <td>{{ profissao.vigi.media }}</td>
+              <td>{{ profissao.vigi.variancia }}</td>
+              <td>{{ profissao.vigi.desvioPadrao }}</td>
             </tr>
           </tbody>
         </table>
@@ -193,87 +193,87 @@
           <tbody>
             <tr>
               <td>Fundamental - Incompleto</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.fi.total }}</td>
+              <td>{{ formacao.fi.media }}</td>
+              <td>{{ formacao.fi.variancia }}</td>
+              <td>{{ formacao.fi.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Fundamental - Completo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.fc.total }}</td>
+              <td>{{ formacao.fc.media }}</td>
+              <td>{{ formacao.fc.variancia }}</td>
+              <td>{{ formacao.fc.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Médio - Incompleto</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.mi.total }}</td>
+              <td>{{ formacao.mi.media }}</td>
+              <td>{{ formacao.mi.variancia }}</td>
+              <td>{{ formacao.mi.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Médio - Completo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.mc.total }}</td>
+              <td>{{ formacao.mc.media }}</td>
+              <td>{{ formacao.mc.variancia }}</td>
+              <td>{{ formacao.mc.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Superior - Incompleto</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.si.total }}</td>
+              <td>{{ formacao.si.media }}</td>
+              <td>{{ formacao.si.variancia }}</td>
+              <td>{{ formacao.si.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Superior - Completo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.sc.total }}</td>
+              <td>{{ formacao.sc.media }}</td>
+              <td>{{ formacao.sc.variancia }}</td>
+              <td>{{ formacao.sc.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Pós-graduação (Lato sensu) - Incompleto</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.lsi.total }}</td>
+              <td>{{ formacao.lsi.media }}</td>
+              <td>{{ formacao.lsi.variancia }}</td>
+              <td>{{ formacao.lsi.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Pós-graduação (Lato sensu) - Completo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.lsc.total }}</td>
+              <td>{{ formacao.lsc.media }}</td>
+              <td>{{ formacao.lsc.variancia }}</td>
+              <td>{{ formacao.lsc.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Pós-graduação (Stricto sensu, nível mestrado) - Incompleto</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.ssmi.total }}</td>
+              <td>{{ formacao.ssmi.media }}</td>
+              <td>{{ formacao.ssmi.variancia }}</td>
+              <td>{{ formacao.ssmi.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Pós-graduação (Stricto sensu, nível mestrado) - Completo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.ssmc.total }}</td>
+              <td>{{ formacao.ssmc.media }}</td>
+              <td>{{ formacao.ssmc.variancia }}</td>
+              <td>{{ formacao.ssmc.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Pós-graduação (Stricto sensu, nível doutor) - Incompleto</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.ssdi.total }}</td>
+              <td>{{ formacao.ssdi.media }}</td>
+              <td>{{ formacao.ssdi.variancia }}</td>
+              <td>{{ formacao.ssdi.desvioPadrao }}</td>
             </tr>
             <tr>
               <td>Pós-graduação (Stricto sensu, nível doutor) - Completo</td>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-              <td>4</td>
+              <td>{{ formacao.ssdc.total }}</td>
+              <td>{{ formacao.ssdc.media }}</td>
+              <td>{{ formacao.ssdc.variancia }}</td>
+              <td>{{ formacao.ssdc.desvioPadrao }}</td>
             </tr>
           </tbody>
         </table>
