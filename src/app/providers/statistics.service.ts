@@ -34,8 +34,8 @@ export class StatisticsService {
   }
 
   /**
-   * O desvio padrão indica o quanto um conjunto de dados é uniforme.
-   * Quanto mais próximo de 0 for o desvio padrão, mais homogêneo são os dados.
+   * Variância é uma medida de dispersão e é usada para
+   *  expressar o quanto um conjunto de dados se desvia da média.
    */
   async variancia(arr: Array<any>, med: number) {
     let aux = 0,

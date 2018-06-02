@@ -1,4 +1,4 @@
-export interface Pesquisa {
+export interface IPesquisa {
   _01_nome: string;
   _02_idade: string;
   _03_sexo: string;

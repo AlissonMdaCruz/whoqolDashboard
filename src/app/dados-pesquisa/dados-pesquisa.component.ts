@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Pesquisa } from '../model/pesquisa.interface';
+import { IPesquisa } from '../model/pesquisa.interface';
 import { Angular5Csv } from 'angular5-csv/Angular5-csv';
 
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
@@ -14,8 +14,8 @@ import 'rxjs/add/operator/map';
 })
 export class DadosPesquisaComponent implements OnInit {
 
-  public pesquisaCollection: AngularFirestoreCollection<Pesquisa>;
-  public pesquisa: Observable<Pesquisa[]>;
+  public pesquisaCollection: AngularFirestoreCollection<IPesquisa>;
+  public pesquisa: Observable<IPesquisa[]>;
   public tabela;
   public options = {
     fieldSeparator: ';',
@@ -33,7 +33,7 @@ export class DadosPesquisaComponent implements OnInit {
     this.pesquisa = this.pesquisaCollection.valueChanges();
     this.pesquisa.subscribe(data => {
       this.tabela = data;
-      console.log(this.tabela);
+      // console.log(this.tabela);
     });
   }
 

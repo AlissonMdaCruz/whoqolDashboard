@@ -1,69 +1,288 @@
-<h1 style="text-align: center">Em Matutenção...</h1>
+<h1 style="text-align: center">Estatísticas</h1>
+<!-- Card Geral -->
 <div class="row">
   <h4 class="header">SCORE GERAL</h4>
-    <div class="card horizontal">
-      <div class="card-stacked">
-        <div class="card-content">
-          <div class="col m3 l3">
-            <p>Total de participações: {{ total }}</p>
-          </div>
-          <div class="col m3 l3">
-            <p>Média Geral: {{ mediaGeral }}</p>
-          </div>
-          <div class="col m3 l3">
-            <p>Desvio Padrão: {{ desvioPadrao }}</p>
-          </div>
-          <div class="col m3 l3">
-            <p>Variância: {{ variancia }}</p>
-          </div>
+  <div class="card horizontal">
+    <div class="card-stacked">
+      <div class="card-content">
+        <div class="col m3 l3">
+          <p>Total de participações: {{ geral.total }}</p>
+        </div>
+        <div class="col m3 l3">
+          <p>Média Geral: {{ geral.media }}</p>
+        </div>
+        <div class="col m3 l3">
+          <p>Desvio Padrão: {{ geral.desvioPadrao }}</p>
+        </div>
+        <div class="col m3 l3">
+          <p>Variância: {{ geral.variancia }}</p>
         </div>
       </div>
     </div>
+  </div>
 </div>
-<!-- <div class="row">
-  <div class="col s6 m6">
-    <h3 class="header">Sexo</h3>
-    <div class="card horizontal">
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>Homens: </p>
-          <p>Mulheres: </p>
-        </div>
-      </div>
-    </div>
-    <h4 class="header">Estado Civil</h4>
-    <div class="card horizontal">
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>Solteiros: </p>
-          <p>Casados: </p>
-          <p>Divorciados: </p>
-          <p>Viúvos: </p>
-          <p>Separados: </p>
-          <p>União Estável: </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col s6 m6">
-    <h2 class="header">Escolaridade</h2>
-    <div class="card horizontal">
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>Fundamental - Incompleto: </p>
-          <p>Fundamental - Completo: </p>
-          <p>Médio - Incompleto: </p>
-          <p>Médio - Completo: </p>
-          <p>Superior - Incompleto: </p>
-          <p>Superior - Completo: </p>
-          <p>Pós-graduação (Lato sensu) - Incompleto: </p>
-          <p>Pós-graduação (Lato sensu) - Completo: </p>
-          <p>Pós-graduação (Stricto sensu, nível mestrado) - Incompleto: </p>
-          <p>Pós-graduação (Stricto sensu, nível mestrado) - Completo: </p>
-          <p>Pós-graduação (Stricto sensu, nível doutor) - Incompleto: </p>
-          <p>Pós-graduação (Stricto sensu, nível doutor) - Completo: </p>
-        </div>
+<!-- Card Sexo -->
+<div class="row">
+  <h4 class="header">SEXO</h4>
+  <div class="card horizontal">
+    <div class="card-stacked">
+      <div class="card-content">
+        <table class="centered striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Total</th>
+              <th scope="col">Media</th>
+              <th scope="col">Variância(*)</th>
+              <th scope="col">Desvio Padrão(**)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Homens</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Mulheres</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-</div> -->
+</div>
+<!-- Card Idades -->
+<div class="row">
+  <h4 class="header">IDADE</h4>
+  <div class="card horizontal">
+    <div class="card-stacked">
+      <div class="card-content">
+        <table class="centered striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Total</th>
+              <th scope="col">Media</th>
+              <th scope="col">Variância(*)</th>
+              <th scope="col">Desvio Padrão(**)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Até 20 anos</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>De 21 a 35 anos</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>De 36 a 50 anos</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>De 51 a 65 anos</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Acima de 65 anos</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card Profissão -->
+<div class="row">
+  <h4 class="header">PROFISSÃO</h4>
+  <div class="card horizontal">
+    <div class="card-stacked">
+      <div class="card-content">
+        <table class="centered striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Total</th>
+              <th scope="col">Media</th>
+              <th scope="col">Variância(*)</th>
+              <th scope="col">Desvio Padrão(**)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Auxiliar de Limpeza</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Estagiário(a)</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Professor(a)</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Técnico-Administrativo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Vigilante</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Card Formação -->
+<div class="row">
+  <h4 class="header">FORMAÇÃO</h4>
+  <div class="card horizontal">
+    <div class="card-stacked">
+      <div class="card-content">
+        <table class="centered striped">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Total</th>
+              <th scope="col">Media</th>
+              <th scope="col">Variância(*)</th>
+              <th scope="col">Desvio Padrão(**)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fundamental - Incompleto</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Fundamental - Completo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Médio - Incompleto</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Médio - Completo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Superior - Incompleto</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Superior - Completo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pós-graduação (Lato sensu) - Incompleto</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pós-graduação (Lato sensu) - Completo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pós-graduação (Stricto sensu, nível mestrado) - Incompleto</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pós-graduação (Stricto sensu, nível mestrado) - Completo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pós-graduação (Stricto sensu, nível doutor) - Incompleto</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Pós-graduação (Stricto sensu, nível doutor) - Completo</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<span>(*) Variância é uma medida de dispersão e é usada para expressar o
+   quanto um conjunto de dados se desvia da média.</span>
+<br>
+<span>(**) O desvio padrão indica o quanto um conjunto de dados é uniforme. Quanto
+   mais próximo de 0 for o desvio padrão, mais homogêneo são os dados.</span>
